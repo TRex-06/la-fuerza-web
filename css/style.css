@@ -1,0 +1,387 @@
+#overlay-inicio {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: #03070b;
+    z-index: 10000;
+    transition: opacity 1s ease, visibility 1s;
+}
+.fade-out { 
+    opacity: 0 !important; 
+    visibility: hidden !important; 
+    transition: opacity 1s ease;
+}
+
+#btn-entrar {
+    position: relative;
+    z-index: 10001; 
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#maquina-escribir {
+    border-right: 2px solid #aafff7;
+    animation: parpadeoCursor 0.8s infinite step-end;
+
+    display: inline-block; /* Permite que respete el espacio */
+    min-width: 5px;       /* Evita que colapse */
+    min-height: 1.2em;    /* Mantiene la altura de la línea */
+    vertical-align: bottom;
+
+}
+@keyframes parpadeoCursor {
+    50% { border-color: transparent; }
+}
+
+body, html {
+    margin: 0;
+    min-height: 100%;
+    background-color: #050a14; 
+    background-image: radial-gradient(circle at center, #0a111a 0%, #03070b 100%);
+    background-attachment: fixed;
+    color: #e0e0e0;
+    
+    cursor: url('./img/cristal\ 32x32-04.png'), auto;
+
+}
+
+
+
+.intro-force {
+    margin-top: 80px !important; 
+    background: radial-gradient(circle at center, rgba(6, 14, 26, 0.8) 0%, transparent 100%);
+    padding: 100px 0;
+}
+
+.divider-force {
+    height: 1px;
+    width: 200px;
+    background: linear-gradient(to right, transparent, #d1daff, transparent);
+    margin: 0 auto;
+    box-shadow: 0 0 10px #ffffff;
+}
+
+.text-intro {
+    font-family: 'trajan pro-regular', serif;
+    font-size: 2.2rem;
+    color: #f8f9fa;
+}
+
+.highlight-force {
+    color: #aafff7; 
+    text-shadow: 0 0 15px rgba(170, 255, 247, 0.5);
+    font-style: italic;
+}
+
+.text-sub {
+    font-family: 'tt-commons', sans-serif;
+    font-size: 1.3rem;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+.btn-force {
+    border-radius: 50px;
+    padding: 10px 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.7s;
+}
+
+.btn-force:hover {
+    box-shadow: 0 0 30px #ffffff;
+    background-color: white;
+    color: black;
+    cursor: url('./img/cristal\ 32x32-04.png'), auto;
+}
+
+
+.hand {
+    width: 12%; 
+    aspect-ratio: 1 / 1; 
+    border-radius: 50%;
+    position: absolute;
+    animation: pulsoMistico 2s infinite ease-in-out;
+    }
+
+.hand.left { 
+    top: 76%; 
+    left: 20.7%;
+    background: #eeeeee00;
+}
+.hand.right { 
+    top: 62%;
+    right: 12.3%; 
+    background: #f5571300;
+}
+
+.hand.middle {
+    top: 34%;
+    right: 35%;
+    background: #f5571300;
+}
+
+.hand.left:hover {
+    box-shadow: 0 0 40px rgb(248, 255, 146) ;
+    transform: scale(1.1);
+    opacity: 1 ;  
+    cursor: url('./img/cristal\ 32x32-05.png'), auto;
+    }
+
+.hand.right:hover {
+    box-shadow: 0 0 40px rgb(249, 0, 0);
+    transform: scale(1.1);
+    cursor: url('./img/cristal\ 32x32-03.png'), auto;
+
+}
+
+.hand.middle:hover {
+    box-shadow: 0 0 40px rgb(77, 225, 255);
+    transform: scale(1.1);
+    cursor: url('./img/cristal\ 32x32-04.png'), auto;
+
+}
+
+@keyframes pulsoMistico {
+    0% { opacity: 0.4; transform: scale(1.1); }
+    50% { opacity: 0.7; transform: scale(1.1); }
+    100% { opacity: 0.3; transform: scale(1.1); }
+}
+
+.cursor-light {
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(210, 241, 255, 0.066) 3%, transparent 40%);
+    border-radius: 70%;
+    pointer-events: none; 
+    transform: translate(-45%, -45%); 
+    z-index: 9999;
+    mix-blend-mode: screen;
+}
+
+.dark-side {
+    cursor: url('./img/cristal\ 32x32-03.png'), auto;
+}
+
+.light-side {
+    cursor: url('./img/cristal\ 32x32-05.png'), auto;
+}
+
+.force-side {
+    cursor: url('./img/cristal\ 32x32-04.png'), auto;
+}
+
+.image-fullscreen {
+    position: relative;
+    width: 100%;
+}
+
+.full-screen-img {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position:0mm;
+    mask-image: linear-gradient(
+        to bottom, 
+        transparent 0%, 
+        rgb(3, 1, 27) 15%, 
+        rgb(1, 1, 43) 85%, 
+        transparent 100%    );
+    -webkit-mask-image: linear-gradient(
+        to bottom, 
+        transparent 0%, 
+        rgb(2, 14, 51) 15%, 
+        rgb(6, 2, 32) 85%, 
+        transparent 100%    );
+}
+
+
+
+.mi-boton {
+    cursor: pointer;
+}
+
+.main-title {
+    font-size: 40px;
+    color: #ffffff;
+    text-shadow: 0 0 50px #aafff7bc, 0 0 20px #ffffffc2, 0 0 30px #ffffffb8, 0 0 40px #fff9f6b7;
+}
+
+.sub-title {
+    font-size: 25px;
+    color: #ffffff;
+    text-shadow: 0 0 10px #aafff7b5, 0 0 20px #ffffffc3, 0 0 30px #ffffffbc, 0 0 40px #fff9f6d0;
+}
+
+.text {
+    font-size: 21px;
+    color: #eff0e2;
+    text-shadow: 0 0 5px rgba(228, 206, 206, 0.5);
+}
+
+.main-title.hijo {
+    color: #ff0000;
+    text-shadow: 0 0 15px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000;
+}
+
+.sub-title.hijo {
+    color: #ff0000;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000;
+}
+
+.text.hijo {
+    color: #ffcccc;
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+
+@font-face {
+    font-family: 'trajan pro-regular';
+    src: url('../fonts/TRAJANPRO-REGULAR_0.TTF') format('truetype'),
+}
+
+@font-face {
+    font-family: 'trajan pro-bold';
+    src: url('../fonts/TRAJANPRO-BOLD_0.OTF') format('opentype'),
+}
+
+h1, h2  {
+    font-family: 'trajan pro-bold', sans-serif;
+    ;}
+
+@font-face {
+    font-family: 'arno';
+    src: url('../fonts/ARNOPRO-REGULAR.OTF') format('opentype'),
+}
+
+h3  {
+    font-family: 'arno', sans-serif;
+    font-size: 32px;
+    ;}
+
+@font-face {
+    font-family: 'tt-commons';
+    src: url('../fonts/Fontspring-DEMO-tt_commons_pro_regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'tt-commons-demibold';
+    src: url('../fonts/FONTSPRING-DEMO-TT_COMMONS_PRO_DEMIBOLD.OTF') format('opentype');
+}
+
+p  {
+    font-family: 'tt-commons', sans-serif;
+    ;}    
+
+
+.btn-light-side {
+    background-color: #f0f1e3;
+    color: rgb(6, 7, 23);
+    box-shadow: 0 0 10px #aafff727, 0 0 20px #ffffff39, 0 0 30px #ffffff43, 0 0 40px #fff9f630;
+    font-family: 'tt-commons-demibold', sans-serif;
+    
+}
+
+.btn-light-side:hover {
+    background-color: #f8f8ed33 !important; 
+    border-color: #ffffed !important;
+    color: white; 
+        cursor: url('./img/cristal\ 32x32-05.png'), auto;
+
+}
+
+.btn-dark-side {
+    background-color: #670303;
+    color: rgb(228, 229, 232);
+    box-shadow: 0 0 10px #ffbbaa27, 0 0 20px #c6393939, 0 0 30px #5d060643, 0 0 40px #d7020230;
+    font-family: 'tt-commons-demibold', sans-serif;
+}
+
+.btn-dark-side:hover {
+    background-color: #67030357 !important; 
+    border-color: #ff0000 !important;
+    color: white; 
+        cursor: url('./img/cristal\ 32x32-03.png'), auto;
+
+}
+
+
+.efecto-fade {
+    animation: aparecer 0.5s ease-out forwards;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(10px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+
+.card-personaje {
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+    filter: brightness(0.9); 
+}
+
+.card-personaje:hover {
+    filter: brightness(1.2); 
+    transform: scale(1.05); 
+    z-index: 10; 
+    box-shadow: 0 0 20px rgba(227, 235, 196, 0.5) !important; 
+    border: 1px solid rgba(255, 236, 194, 0.8) !important;
+}
+
+.row:has(.card-personaje:hover) .card-personaje:not(:hover) {
+    filter: brightness(0.5) ; 
+    opacity: 0.8;
+}
+
+.card-personaje-dark {
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+    filter: brightness(0.9); 
+}
+
+.card-personaje-dark:hover {
+    filter: brightness(1.2); 
+    transform: scale(1.05); 
+    z-index: 10; 
+    box-shadow: 0 0 20px rgba(190, 54, 54, 0.5) !important; 
+    border: 1px solid rgba(255, 86, 86, 0.8) !important;
+    cursor: url('./img/cristal\ 32x32-03.png'), auto;
+}
+
+.card-grande-base {
+    position: relative;
+    overflow: hidden;
+    min-height: 450px;
+}
+
+/* Capas */
+.bg-layer {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.6s ease-in-out;
+    z-index: 0;
+}
+
+/* Estado inicial */
+.bg-a { opacity: 1; }
+.bg-b { opacity: 0; }
+
+.card-body {
+    position: relative;
+    z-index: 2;
+}
