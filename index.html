@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>La Fuerza</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"             rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"             crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body>
+
+        <audio id="bg-music" loop>
+            <source src="./img/ilum-jedi-crystal-meditation.mp3" type="audio/mpeg">
+        </audio>
+        <div class="cursor-light" id="light"></div>
+        <audio id="audioClick" src="./img/force sound effcts.mp3"></audio>
+        <header>
+            <!--  navbar  -->
+            <nav class="navbar navbar-expand-lg bg-black fixed-top py-1">
+                <nav class="container">
+                    <a class="navbar-brand py-3" href="#">
+                        <img src="./img/star-wars-01-13.png" alt="Star Wars Logo" width="30%">
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    </div>
+                </nav>
+            </nav>
+
+        <main>
+
+<!-- Pantalla de bienvenida -->
+    <div id="overlay-inicio" class="d-flex justify-content-center align-items-center my-5 mb-5 py-5">
+        <div class="text-center efecto-fade my-5 py-5">
+            <h2 class="main-title mb-4 my-2 px-5 ">La Fuerza fluye en todos… pero no todos la comprenden.</h2>
+            <br>
+            <button type="button" id="btn-entrar-overlay" class="btn btn-outline-light btn-lg btn-force my-5">
+                Aprender más
+            </button>
+        </div>
+    </div>
+
+<!-- Intro -->
+
+<section class="intro-force py-5 text-center my-5 mb-5">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 my-3 mb-5">
+                
+                <div class="divider-force  my-3 mb-5"></div>
+                    <p class="text-intro mb-4 my-5">
+                        ¿Sabes realmente qué es la Fuerza?
+                    </p>
+                    <p class="text-sub">
+                        
+                            <span id="maquina-escribir" class="highlight-force"></span>
+                    </p>
+                        <p class="mt-4 text-center" style="opacity: 0.6; font-size: 20px; line-height: 1.6;">
+                            El Padre — Equilibrio<br>
+                            La Hija — Luz<br>
+                            El Hijo — Oscuridad
+                        </p>
+
+                    <a href="#seccion-mortis" class="btn btn-outline-light btn-force mt-4" id="btn-entrar-explorar">
+                        Explorar el Equilibrio
+                    </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="seccion-mortis">
+
+            <div class="image-fullscreen">
+                <img src="./img/the force wireframe-06.png" alt="Mortis mural" class="img-fluid full-screen-img">
+                <a class="hand left" href="#seccion-hija"></a>
+                <a class="hand right" href="#seccion-hijo"></a>
+                <a class="hand middle" href="#seccion-padre"></a>
+            </div>
+        </main>
+
+</section>
+<br>
+<br>
+<br>
+<br>
+<!-- Seccion el padre -->
+<section id="seccion-padre" class="info-section force-side">
+
+        <div class="container my-5 py-5">
+            <div class="row">
+                <div class="col-5 my-5 py-3"> 
+                    <img src="./img/the force wireframe-12.png" alt="El padre" class="img-fluid" style="  background: radial-gradient(circle, rgba(255, 251, 226, 0.021) 0%, transparent 60%);
+">
+
+                </div>
+                <div class="col-7 mt-5 my-5 py-3">
+                    <h1 class="main-title mt-4">El Padre</h1>
+                    <h2 class="sub-title my-2">“Balance.”</h2>
+                        <p class="my-5 py-5 text">
+                            El Padre no representa ni el Lado Luminoso ni el Oscuro. Representa la capacidad de contener ambos sin ser consumido por ninguno. Su existencia es, en sí misma, una paradoja. No es la Fuerza como energía pura. Tampoco es un usuario común de la Fuerza. Es un nodo consciente donde la Fuerza se regula a sí misma.
+                        <div>
+                            <a href="#seccion-hija"><button type="button" class="btn btn-light-side btn-lg btn-sonido">Ver sobre la Hija </button></a>
+                            <span class="mx-2"><a href="#seccion-hijo"><button type="button" class="btn btn-dark-side btn-lg btn-sonido">Ver sobre el Hijo </button></a></span>
+                        </div>
+
+                        </p>
+                    </div>
+                </div>
+        </div>
+<br>
+<br>
+<br>
+<br>
+<!-- Seccion la hija -->
+<section id="seccion-hija" class="info-section light-side" data-gradient="rgba(13, 24, 44, 0.9)">
+
+        <div class="container my-5 py-5">
+            <div class="row">
+                <div class="col-5 my-5 py-3"> 
+                    <img src="./img/the force wireframe-09.png" alt="La hija" class="img-fluid">
+
+                </div>
+                <div class="col-7 mt-5 my-5 py-3">
+                    <h1 class="main-title mt-4">La hija</h1>
+                    <h2 class="sub-title my-2">“Compasión. Equilibrio. Serenidad.”</h2>
+                        <p class="my-5 py-5 text">
+                            La Hija representa la armonía con la Fuerza. A diferencia del Hijo, que busca imponer su voluntad, ella fluye con ella, lo que la alinea directamente con la filosofía Jedi más pura. Su existencia no se basa en el control, sino en la aceptación, la compasión y el equilibrio interior.
+                            <div>
+                            <a href="#seccion-light-side-characters"><button type="button" class="btn btn-light-side btn-lg btn-sonido" >Ver personajes </button></a>
+                            </div>
+
+                        </p>
+                    </div>
+                </div>
+        </div>
+
+<br>
+<br>
+<br>
+<br>
+
+
+<!-- Seccion lado luminoso personaje -->
+<section id="seccion-light-side-characters" class="info-section light-side py-5" data-gradient="rgba(13, 24, 44, 0.9)" >
+    <div class="container">
+        <div class="row g-5">
+<!-- cards pequeños-->
+        <div class="col-md-8">
+            <div class="row g-5 text-center">
+                
+                <div class="col-4"> 
+                        <div class="card card-personaje rounded-4 shadow border-0 h-100" style="background-image: url('./img/the\ force\ wireframe-08.png'); background-size: cover; background-position: center;"
+                            data-nombre="Ahsoka Tano" 
+                            data-descripcion="Ahsoka fue una Jedi que luchó durante la Guerra de las Clones."
+                            data-imagen="./img/busts-23.png"
+                            data-fullbody="./img/the force wireframe-17.png"
+                            style="cursor: pointer;">
+                            <img src="./img/busts-23.png" class="card-img-top rounded-top-4" alt="Dooku">
+                            <div class="card-body p-2" style="background: rgba(1, 12, 41, 0.7);">
+                                <p class="card-title text-white mb-0" style="font-size: 0.9rem;">Ahsoka Tano</p>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-4"> 
+                        <div class="card card-personaje rounded-4 shadow border-0 h-100" style="background-image: url('./img/the\ force\ wireframe-08.png'); background-size: cover; background-position: center;"
+                            data-nombre="Obiwan Kenobi" 
+                            data-descripcion="Obi Wan Kenobi es un maestro Jedi, mentor de Anakin Skywalker y posteriormente de Luke Skywalker. Es conocido por su sabiduría, habilidades con el sable de luz y su compromiso con la Fuerza."
+                            data-imagen="./img/busts-19.png"
+                            data-fullbody="./img/obiwan-11.png"
+                            style="cursor: pointer;">
+                            <img src="./img/busts-19.png" class="card-img-top rounded-top-4" alt="Dooku">
+                            <div class="card-body p-2" style="background: rgba(1, 12, 41, 0.7);">
+                                <p class="card-title text-white mb-0" style="font-size: 0.9rem;">Obiwan Kenobi</p>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-4"> 
+                        <div class="card card-personaje rounded-4 shadow border-0 h-100" style="background-image: url('./img/the\ force\ wireframe-08.png'); background-size: cover; background-position: center;"
+                            data-nombre="Luke Skywalker" 
+                            data-descripcion="Luke Skywalker fue un Jedis que luchó durante la Guerra de las Clones."
+                            data-imagen="./img/busts-20.png"
+                            data-fullbody="./img/the force wireframe-14.png"
+                            style="cursor: pointer;">
+                            <img src="./img/busts-20.png" class="card-img-top rounded-top-4" alt="Luke">
+                            <div class="card-body p-2" style="background: rgba(1, 12, 41, 0.7);">
+                                <p class="card-title text-white mb-0" style="font-size: 0.9rem;">Luke Skywalker</p>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-4"> 
+                        <div class="card card-personaje rounded-4 shadow border-0 h-100" style="background-image: url('./img/the\ force\ wireframe-08.png'); background-size: cover; background-position: center;"
+                            data-nombre="Kanan Jarrus" 
+                            data-descripcion="Kanan Jarrus fue un Maestro Jedi que luchó durante la Guerra de las Clones."
+                            data-imagen="./img/busts-24.png"
+                            data-fullbody="./img/the force wireframe-15.png"
+                            style="cursor: pointer;">
+                            <img src="./img/busts-24.png" class="card-img-top rounded-top-4" alt="Dooku">
+                            <div class="card-body p-2" style="background: rgba(1, 12, 41, 0.7);">
+                                <p class="card-title text-white mb-0" style="font-size: 0.9rem;">Kanan Jarrus</p>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-4"> 
+                        <div class="card card-personaje rounded-4 shadow border-0 h-100" style="background-image: url('./img/the\ force\ wireframe-08.png'); background-size: cover; background-position: center;"
+                            data-nombre="Cal Kestis" 
+                            data-descripcion="Cal Kestis fue un Padawan que se convirtió en Jedi."
+                            data-imagen="./img/busts-22.png"
+                            data-fullbody="./img/the force wireframe-16.png"
+                            style="cursor: pointer;">
+                            <img src="./img/busts-22.png" class="card-img-top rounded-top-4" alt="Dooku">
+                            <div class="card-body p-2" style="background: rgba(1, 12, 41, 0.7);">
+                                <p class="card-title text-white mb-0" style="font-size: 0.9rem;">Cal Kestis</p>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-4"> 
+                        <div class="card card-personaje rounded-4 shadow border-0 h-100" style="background-image: url('./img/the\ force\ wireframe-08.png'); background-size: cover; background-position:center;"
+                            data-nombre="Yoda" 
+                            data-descripcion="Yoda fue un maestro Jedi y líder de la Orden Jedi."
+                            data-imagen="./img/busts-21.png"
+                            data-fullbody="./img/the force wireframe-18.png"    
+                            style="cursor: pointer;">
+                            <img src="./img/busts-21.png" class="card-img-top rounded-top-4" alt="Yoda">
+                            <div class="card-body p-2" style="background: rgba(1, 12, 41, 0.7);">
+                                <p class="card-title text-white mb-0" style="font-size: 0.9rem;">Yoda</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+<!-- card grande-->
+
+                <div class="col-md-4 ">
+                    <div class="card card-grande-base rounded-4 shadow border-0 h-100 " style="
+                        background-image: linear-gradient(to top, rgba(13, 24, 44, 0.9) 30%, transparent), url('./img/obiwan-11.png'); 
+                        background-size: cover; 
+                        background-position: center; 
+                        min-height: 450px; 
+                        display: flex; 
+                        flex-direction: column; 
+                        justify-content: flex-end;
+                        transition: background-image 0.3s ease-in-out; ">
+                        
+                        <div class="card-body flex-grow-0 p-4">
+            <h3 class="card-title titulo-grande text-white mb-2" >Obiwan Kenobi</h3>
+            <p class="card-text descripcion-grande text-white mb-0" style="font-size: 0.9rem; line-height: 1.4;">
+                Obi Wan Kenobi es un maestro Jedi, mentor de Anakin Skywalker y posteriormente de Luke Skywalker. Es conocido por su sabiduría, habilidades con el sable de luz y su compromiso con la Fuerza.            
+            </p>
+                        </div>
+                    </div>
+                </div>        
+        </div>
+    </div>
+<br>
+<br>
+<br>
+<br>
+
+</section>
+
+<!-- Seccion El Hijo-->
+<section id="seccion-hijo" class="info-section dark-side">
+    <div class="container my-5 py-5">
+        <div class="row">
+            <div class="col-7 mt-5 my-5 py-3">
+                <h1 class="main-title hijo mt-4">El hijo</h1>
+                <h2 class="sub-title hijo my-2">“Maldad. Oscuridad. Fuerza.”</h2>
+                    <p class="my-5 py-5 text hijo">
+                        El Hijo representa el lado oscuro de la Fuerza, pero no representa simplemente maldad, sino deseo sin restricción. Es la Fuerza utilizada como herramienta de imposición. Busca control absoluto. Rechaza límites, incluso los del equilibrio. Entiende la Fuerza como algo que debe doblegarse, no comprenderse.
+                    </p>
+                    <div>
+                            <a href="#seccion-dark-side-characters"><button type="button" class="btn btn-dark-side btn-lg btn-sonido" >Ver personajes </button></a>
+                            </div>
+            </div>
+            <div class="col-5 my-5 py-3">
+                <img src="./img/the force wireframe-10.png" alt="El hijo" class="img-fluid">
+
+            </div>
+            
+        </div>
+    </div>
+<br>
+<br>
+<br>
+<br>
+    </section>
+
+<!-- Seccion lado oscuro personaje -->
+<section id="seccion-dark-side-characters" class="info-section dark-side py-5" data-gradient="rgba(85, 0, 0, 0.9)">
+    <div class="container">
+        <div class="row g-5">
+<!-- cards pequeños-->
+        <div class="col-md-8">
+            <div class="row g-5 text-center">
+                
+                <div class="col-4"> 
+                        <div class="card card-personaje card-personaje-dark rounded-4 shadow border-0 h-100" style="background-image: url('./img/the\ force\ wireframe-08.png'); background-size: cover; background-position: center;"
+                            data-nombre="Darth Sidious" 
+                            data-descripcion="Darth Sidious es el Emperador Galáctico y el líder de la Máquina de Guerra."
+                            data-imagen="./img/darkcharacters-02.png"
+                            data-fullbody="./img/darkcharacters-13.png"
+                            style="cursor: pointer;">
+                            <img src="./img/darkcharacters-02.png" class="card-img-top rounded-top-4" alt="Darth Sidious">
+                            <div class="card-body p-2" style="background: rgba(41, 1, 1, 0.7);">
+                                <p class="card-title text-white mb-0" style="font-size: 0.9rem;">Darth Sidious</p>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-4"> 
+                        <div class="card card-personaje  card-personaje-dark rounded-4 shadow border-0 h-100" style="background-image: url('./img/the\ force\ wireframe-08.png'); background-size: cover; background-position: center;"
+                            data-nombre="Darth Vader" 
+                            data-descripcion="Darth Vader es un Sith Lord y el principal antagonista de la saga de Star Wars."
+                            data-imagen="./img/darkcharacters-05.png"
+                            data-fullbody="./img/darkcharacters-10.png"
+                            style="cursor: pointer;">
+                            <img src="./img/darkcharacters-05.png" class="card-img-top rounded-top-4" alt="Darth Vader">
+                            <div class="card-body p-2" style="background: rgba(41, 1, 1, 0.7);">
+                                <p class="card-title text-white mb-0" style="font-size: 0.9rem;">Darth Vader</p>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-4"> 
+                        <div class="card card-personaje card-personaje-dark rounded-4 shadow border-0 h-100" style="background-image: url('./img/the\ force\ wireframe-08.png'); background-size: cover; background-position: center;"
+                            data-nombre="Darth Maul" 
+                            data-descripcion="Darth Maul es un Sith Lord y uno de los principales antagonistas de la saga de Star Wars."
+                            data-imagen="./img/darkcharacters-04.png"
+                            data-fullbody="./img/darkcharacters-11.png"
+                            style="cursor: pointer;">
+                            <img src="./img/darkcharacters-04.png" class="card-img-top rounded-top-4" alt="Darth Maul">
+                            <div class="card-body p-2" style="background: rgba(41, 1, 1, 0.7);">
+                                <p class="card-title text-white mb-0" style="font-size: 0.9rem;">Darth Maul</p>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-4"> 
+                        <div class="card card-personaje card-personaje-dark rounded-4 shadow border-0 h-100" style="background-image: url('./img/the\ force\ wireframe-08.png'); background-size: cover; background-position: center;"
+                            data-nombre="Count Dooku" 
+                            data-descripcion="Count Dooku fue un Maestro Jedi que se convirtió en Sith Lord."
+                            data-imagen="./img/darkcharacters-03.png"
+                            data-fullbody="./img/darkcharacters-12.png"
+                            style="cursor: pointer;">
+                            <img src="./img/darkcharacters-03.png" class="card-img-top rounded-top-4" alt="Dooku">
+                            <div class="card-body p-2" style="background: rgba(41, 1, 1, 0.7);">
+                                <p class="card-title text-white mb-0" style="font-size: 0.9rem;">Count Dooku</p>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-4"> 
+                        <div class="card card-personaje card-personaje-dark rounded-4 shadow border-0 h-100" style="background-image: url('./img/the\ force\ wireframe-08.png'); background-size: cover; background-position: center;"
+                            data-nombre="Kylo Ren" 
+                            data-descripcion="Kylo Ren es un jedi que se convirtió en Sith."
+                            data-imagen="./img/darkcharacters-06.png"
+                            data-fullbody="./img/darkcharacters-09.png"
+                            style="cursor: pointer;">
+                            <img src="./img/darkcharacters-06.png" class="card-img-top rounded-top-4" alt="Kylo Ren">
+                            <div class="card-body p-2" style="background: rgba(41, 1, 1, 0.7);">
+                                <p class="card-title text-white mb-0" style="font-size: 0.9rem;">Kylo Ren</p>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-4"> 
+                        <div class="card card-personaje card-personaje-dark rounded-4 shadow border-0 h-100" style="background-image: url('./img/the\ force\ wireframe-08.png'); background-size: cover; background-position:center;"
+                            data-nombre="El Gran Inquisidor" 
+                            data-descripcion="El Gran Inquisidor es un Sith Lord y uno de los principales antagonistas de la saga de Star Wars."
+                            data-imagen="./img/darkcharacters-07.png"
+                            data-fullbody="./img/darkcharacters-08.png"    
+                            style="cursor: pointer;">
+                            <img src="./img/darkcharacters-07.png" class="card-img-top rounded-top-4" alt="El Gran Inquisidor">
+                            <div class="card-body p-2" style="background: rgba(41, 1, 1, 0.7);">
+                                <p class="card-title text-white mb-0" style="font-size: 0.9rem;">El Gran Inquisidor</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+<!-- card grande-->
+
+                <div class="col-md-4 ">
+                    <div class="card card-grande-base rounded-4 shadow border-0 h-100 "style="
+                        background-image: linear-gradient(to top, rgba(85, 0, 0, 0.9) 20%, transparent), url('./img/darkcharacters-13.png'); 
+                        background-size: cover; 
+                        background-position: center; 
+                        min-height: 450px; 
+                        display: flex; 
+                        flex-direction: column; 
+                        justify-content: flex-end;
+                        transition: background-image 0.3s ease-in-out; ">
+                        
+                        <div class="card-body flex-grow-0 p-4">
+            <h3 class="card-title titulo-grande text-white mb-2" >Darth Sidious</h3>
+            <p class="card-text descripcion-grande text-white mb-0" style="font-size: 0.9rem; line-height: 1.4;">
+                Darth Sidious es un Sith Lord y el principal antagonista de la saga de Star Wars. Es conocido por su astucia, poder con la Fuerza y su ambición de dominar la galaxia.
+            </p>
+                        </div>
+                    </div>
+                </div>        
+        </div>
+    </div>
+<br>
+<br>
+<br>
+<br>
+
+    </section>
+
+
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
+
+</html>
